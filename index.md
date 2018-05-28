@@ -1,4 +1,4 @@
 ---
-layout: main_template
+layout: home
 permalink: /
 ---
