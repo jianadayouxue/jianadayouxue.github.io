@@ -1,0 +1,55 @@
+---
+layout: main_template
+---
+<!--{% include mlh.html %}-->
+
+
+{% include particle_bg.html %}
+<div id="home">
+    
+<iframe style="position: relative; top: 0; left: 0; width: 100%; height: 100%;" src="https://flickrembed.com/cms_embed.php?source=flickr&layout=responsive&input=72157696738062154&sort=0&by=album&theme=default_notextpanel&scale=fit&limit=20&skin=default&autoplay=true" scrolling="no" frameborder="0" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"><p><a  href="https://www.youtubevideoembed.com/add-youtube-videos-powerpoint/">https://www.youtubevideoembed.com/add-youtube-videos-powerpoint/</a></p><small>Powered by <a href="https://flickrembed.com">flickr embed</a>.</small></iframe><script type="text/javascript">function showpics(){var a=$("#box").val();$.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?tags="+a+"&tagmode=any&format=json&jsoncallback=?",function(a){$("#images").hide().html(a).fadeIn("fast"),$.each(a.items,function(a,e){$("<img/>").attr("src",e.media.m).appendTo("#images")})})}</script>
+
+
+
+    
+    
+    
+	
+</div>
+
+
+<div id="about" class="section container to-white">
+    	<h2 class="thick-title reveal"><b>关于我们</b></h2>
+    	<p class="reveal">Carleton University's CUHacking is the largest hackathon in Ottawa. The hackathon takes place over 24 hours, non-stop! Students can compete against each other and themselves to take their projects from concept to reality.</p>
+</div>
+
+
+{% include schedule.html %}
+
+
+
+
+<h2 class="thick-title bg">常见问题</h2>
+<div id="faq" class="section container med parallax-bg static-nodes-bg">
+	{% include faq.html %}
+</div>
+
+
+<div id="contact" class="section container dark">
+	<h2 class="contact-title">
+		<!--i class="em em-envelope" aria-hidden="true" style="margin-right:15px"></i-->
+		联系我们
+	</h2><hr>
+	<p class="contact-subtitle">Have a question? Use the form below and we'll get back to you ASAP.</p>
+	{% include contact-form.html %}
+</div>
+
+
+<script type="text/javascript">
+	//$("#home-nav").addClass("active");
+</script>
+
+<!--Particle js-->
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<!--Particle js-->
+<script src="{{ site.baseurl }}/assets/js/particles_settings.js"></script>
